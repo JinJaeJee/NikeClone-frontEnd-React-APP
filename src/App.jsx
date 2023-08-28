@@ -2,7 +2,7 @@ import { CustomerReviews, Footer, Hero, Nav, PopularProducts, Services, Specialo
 
 const App = () => (
   <main className="relative">
-    <Nav/>
+    <Nav />
     <section className="xl:padding-1 wide:padding-r pdding-b">
       <Hero/>
     </section>
