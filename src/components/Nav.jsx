@@ -1,6 +1,6 @@
 import { headerLogo } from "../assets/images"
 import { hamburger } from "../assets/icons"
-import { navLinks } from "../constants"
+import { navLinks } from "../constants/index"
 
 
 const Nav = () => {
@@ -27,7 +27,7 @@ const Nav = () => {
           </li>
         )) }
         </ul>
-        <div>
+        <div className="hidden max-lg:block">
           <img 
           src= {hamburger}
           alt= {"Hamburger"}
