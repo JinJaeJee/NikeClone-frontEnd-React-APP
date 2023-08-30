@@ -6,7 +6,7 @@ import { bigShoe1 } from "../assets/images"
 import ShoesCard from "../components/ShoesCard"
 
 const Hero = () => {
-  const [bigShoe, setbigShoe] = useState(bigShoe1)
+  const [bigShoeImg, setbigShoeImg] = useState(bigShoe1)
   return (
     <section 
     id="home" 
@@ -34,7 +34,7 @@ const Hero = () => {
     </div>
     <div className="relative flex-1 flex justify-center items-center xl:min-h-screen max-xl:py-40 bg-primary bg-hero bg-cover bg-center">
       <img 
-        src={ bigShoe1 }
+        src={ bigShoeImg }
         alt="shoes collection"
         width={400}
         height={250}
@@ -45,8 +45,8 @@ const Hero = () => {
         <div key={index}>
           <ShoesCard
             imgURL= {shoe}
-            changeBigShoeImage= {() => {}}
-            bigShoeImg="" 
+            changeBigShoeImage= {(shoe) => setbigShoeImg(shoe)}
+            bigShoeImg={bigShoeImg} 
           />
         </div>
         ))}
