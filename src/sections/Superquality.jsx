@@ -1,4 +1,4 @@
-import { star } from "../assets/icons"
+
 import { shoe8 } from "../assets/images"
 import Button from "../components/Button"
 
